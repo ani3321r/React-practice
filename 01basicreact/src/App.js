@@ -1,5 +1,13 @@
+import Chai from "./Chai.js"; //we must capitalize the created component
+
 function App() {
-  return <h1>Finally starting react | Aniruddha Roy </h1>;
+  return (
+    <>
+      <Chai />
+    </>
+  );
 }
 
 export default App;
+
+//<h1>Finally starting react | Aniruddha Roy </h1>;
