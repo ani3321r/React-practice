@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { TodoProvider } from "./contexts";
 import "./App.css";
 import TodoForm from "./components/TodoForm";
@@ -22,6 +22,7 @@ function App() {
   };
 
   const toggleComplete = (id) => {
+    //console.log(id);
     setTodos((prev) =>
       prev.map((prevTodo) =>
         prevTodo.id === id
@@ -53,8 +54,8 @@ function App() {
             Manage Your Todos
           </h1>
           <div className="mb-4">
-            <TodoForm />
             {/* Todo form goes here */}
+            <TodoForm />
           </div>
           <div className="flex flex-wrap gap-y-3">
             {/*Loop and Add TodoItem here */}
